@@ -1,0 +1,28 @@
+{
+    "name": "js-full",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Mwxyz2022/JS-full.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Mwxyz2022/JS-full/issues"
+    },
+    "homepage": "https://github.com/Mwxyz2022/JS-full#readme",
+    "dependencies": {
+        "eslint": "^8.23.1",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "prettier": "^2.7.1"
+    }
+}
