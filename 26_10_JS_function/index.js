@@ -39,9 +39,13 @@ getMassage(undefined);
 getMassage(null);
 
 /// /////////////////////////////////////////////////////
-const mult = (a, b) => a * b; /// (  const mult = (a, b) => console.log(a * b); - не проходит в консоле  если вызвать: mult(a, b)--=(( )) )
+// const mult = (a, b) => a * b; /// (  const mult = (a, b) => console.log(a * b); - не проходит в консоле  если вызвать: mult(a, b)--=(( )) )
 
+const mult = (a, b) => console.log(a * b);
 /// test
+
+mult(12, 13);
+mult(13, 10);
 
 console.log(mult(12, 23)); // 256
 console.log(mult(NaN, -23)); // NaN
