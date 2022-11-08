@@ -29,3 +29,16 @@ const unshiftRes = numbersList3.unshift(100, 'number', {}, []);
 console.log(unshiftRes);
 
 console.log('AFTER UNSHIFT', numbersList3);
+
+input: callback
+output: array (new array)
+
+const anotherNumbersList = [5, 13, 0, 12, -10, 700];
+
+// const filterResult = anotherNumbersList.filter(function filterCallback(element) {
+//   return element > 5;
+// });
+
+const filterResult = anotherNumbersList.filter(element => element > 5);
+
+console.log(filterResult);
