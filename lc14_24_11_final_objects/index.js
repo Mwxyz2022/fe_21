@@ -65,9 +65,30 @@ const obj7 = {
 
 // ref
 
+// function compareObjects(firstObj, secondObj) {
+//   const convertObj = obj => Object.entries(obj).sort().flat().join();
+//   return convertObj(firstObj) === convertObj(secondObj);
+// }
+
+// ref (no - entries / .keys - 1 / )
+
+// function compareObjects(firstObj, secondObj) {
+//   const firstObjKeys = Object.keys(firstObj);
+
+//   if (firstObjKeys.length !== Object.keys(secondObj).length) {
+//     return false;
+//   }
+
+//   return !firstObjKeys.some(key => firstObj[key] !== secondObj[key]);
+// }
+
 function compareObjects(firstObj, secondObj) {
-  const convertObj = obj => Object.entries(obj).sort().flat().join();
-  return convertObj(firstObj) === convertObj(secondObj);
+  const firstObjKeys = Object.keys(firstObj);
+
+  if (firstObjKeys.length === Object.keys(secondObj).length) {
+    return !firstObjKeys.some(key => firstObj[key] !== secondObj[key]);
+  }
+  return false;
 }
 
 // dataTest
