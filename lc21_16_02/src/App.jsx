@@ -12,4 +12,4 @@ export default App;
 //  2. Break into components
 //  3. Move html into JSX
 //  4. Identify state(& where state should) & props
-//  5. rite logic
+//  5. Write logic
