@@ -4,7 +4,7 @@ import User from './User';
 
 class UsersList extends Component {
     state = {
-        curPage: 0,
+        curPage: 1,
     };
 
     goPrev = () => {
@@ -21,8 +21,7 @@ class UsersList extends Component {
 
     render() {
         const itemsPerPage = 3;
-        const pageNumber = this.state.curPage + 1;
-        const startIndex = (pageNumber - 1) * itemsPerPage;
+        const startIndex = (this.state.curPage - 1) * itemsPerPage;
         const endIndex = startIndex + itemsPerPage;
         const renderUsers = this.props.users.slice(startIndex, endIndex);
 
@@ -32,7 +31,7 @@ class UsersList extends Component {
                     goPrev={this.goPrev}
                     goNext={this.goNext}
                     totalItems={this.props.users.length}
-                    currentPage={pageNumber}
+                    currentPage={this.state.curPage}
                     itemsPerPage={itemsPerPage}
                 />
 

@@ -12,6 +12,8 @@ const users = [
     { name: 'Bom', age: 21 },
     { name: 'DOM', age: 22 },
     { name: 'Toretto', age: 60 },
+    { name: 'Jane', age: 23 },
+    { name: 'Dina', age: 60 },
 ];
 
 const App = () => {
