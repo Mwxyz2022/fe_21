@@ -1,5 +1,5 @@
 import React from 'react';
-import UsersList from './UserList';
+import UsersList from './UsersList';
 
 import { users } from './store.js';
 

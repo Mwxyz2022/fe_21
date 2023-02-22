@@ -34,7 +34,6 @@ class UsersList extends Component {
                     currentPage={this.state.currentPage}
                     itemsPerPage={itemsPerPage}
                 />
-
                 <ul className="users">
                     {renderUsers.map(user => (
                         <User {...user} key={user.name + user.age} />
