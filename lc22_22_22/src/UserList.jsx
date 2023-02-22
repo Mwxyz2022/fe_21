@@ -4,16 +4,16 @@ import User from './User';
 
 class UsersList extends Component {
     state = {
-        curPage: 1,
+        currentPage: 1,
     };
 
-    goPrev = () => {
+    goPrevPage = () => {
         this.setState({
             curPage: (this.state.curPage -= 1),
         });
     };
 
-    goNext = () => {
+    goNextPage = () => {
         this.setState({
             curPage: (this.state.curPage += 1),
         });
@@ -21,17 +21,17 @@ class UsersList extends Component {
 
     render() {
         const itemsPerPage = 3;
-        const startIndex = (this.state.curPage - 1) * itemsPerPage;
+        const startIndex = (this.state.currentPage - 1) * itemsPerPage;
         const endIndex = startIndex + itemsPerPage;
         const renderUsers = this.props.users.slice(startIndex, endIndex);
 
         return (
             <div>
                 <Pagination
-                    goPrev={this.goPrev}
-                    goNext={this.goNext}
+                    goPrev={this.goPrevPage}
+                    goNext={this.goNextPage}
                     totalItems={this.props.users.length}
-                    currentPage={this.state.curPage}
+                    currentPage={this.state.currentPage}
                     itemsPerPage={itemsPerPage}
                 />
 
