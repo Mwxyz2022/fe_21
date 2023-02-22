@@ -10,13 +10,13 @@ class UsersList extends Component {
         curPage: 0,
     };
 
-    prevPage = () => {
+    goPrev = () => {
         this.setState({
             curPage: (this.state.curPage -= 1),
         });
     };
 
-    nextPage = () => {
+    goNext = () => {
         this.setState({
             curPage: (this.state.curPage += 1),
         });
@@ -32,8 +32,8 @@ class UsersList extends Component {
         return (
             <div>
                 <Pagination
-                    goPrev={this.prevPage}
-                    goNext={this.nextPage}
+                    goPrev={this.goPrev}
+                    goNext={this.goNext}
                     totalItems={this.props.users.length}
                     currentPage={pageNumber}
                     itemsPerPage={itemsPerPage}
