@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import Pagination from './Pagination';
 import User from './User';
 
-// state
-// curPage: number
-
 class UsersList extends Component {
     state = {
         curPage: 0,
