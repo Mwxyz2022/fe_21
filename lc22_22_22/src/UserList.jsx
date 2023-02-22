@@ -9,13 +9,13 @@ class UsersList extends Component {
 
     goPrevPage = () => {
         this.setState({
-            curPage: (this.state.curPage -= 1),
+            currentPage: (this.state.currentPage -= 1),
         });
     };
 
     goNextPage = () => {
         this.setState({
-            curPage: (this.state.curPage += 1),
+            currentPage: (this.state.currentPage += 1),
         });
     };
 
