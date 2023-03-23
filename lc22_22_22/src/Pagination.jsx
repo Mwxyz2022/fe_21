@@ -3,7 +3,7 @@ import React from 'react';
 const Pagination = ({ goPrev, goNext, totalItems, currentPage, itemsPerPage }) => {
     const maxPageNumber = Math.ceil(totalItems / itemsPerPage);
 
-    const isPrevPageAvailable = currentPage > 1;
+    const isPrevPageAvailable = currentPage !== 1;
     const isNextPageAvailable = currentPage < maxPageNumber;
 
     return (

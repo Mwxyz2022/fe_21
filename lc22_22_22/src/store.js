@@ -11,5 +11,4 @@ export const users = [
     { name: 'Toretto', age: 60 },
     { name: 'Jane', age: 23 },
     { name: 'Dina', age: 60 },
-    { name: 'Sem', age: 60 },
 ];
